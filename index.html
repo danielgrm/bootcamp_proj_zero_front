@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt_Null</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <header>
+       
+        <div class="header">
+            <div class="logo">
+                <img src="marvinpistola.png">
+            </div>
+            <div class="title">
+            <h2>Projekt_Kino</h2><br>
+            
+            </div>
+        </div>
+    </header>
+
+    <br>
+    <div>
+        <main>
+            <div class="form">
+                <h3>Adicionar novo filme</h3>
+                <form action="http://localhost:3000/user" method="post" target="new">
+                    <label for="titulo">Titulo:</label><br>
+                    <input type="text" id="titulo" name="titulo"><br>
+                    <label for="ano">Ano:</label><br>
+                    <input type="number" id="ano" name="ano"><br>
+                    <label for="genero">Genero:</label><br>
+                    <input type="text" id="genero" name="genero"><br>
+                    <label for="duracao">duracao:</label><br>
+                    <input type="number" id="duracao" name="duracao"><br>
+                    <label for="diretor">diretor:</label><br>
+                    <input type="text" id="diretor" name="diretor"><br>
+                    <button type="submit">Submit</button>
+                </form>
+
+                <br>
+                <br>
+                <form action="http://localhost:3000/user" method="delete" target="new" >
+                    <label for="id">Deleta filme:</label><br>
+                    <input type="text" id="id" name="id" placeholder="ainda nao ta funcionando"><br>
+                    <button onclick="document.location='http://localhost:3000/user/'">Delete</button>
+
+            </div>
+
+        <div class="banner">
+            <img src="kino-1.jpg">
+        </div>
+        <div class="button">
+            <button onclick="document.location='list.html'">Visualiza Lista de Filmes</button>
+        </div>
+        </main>
+        <footer>
+            Tá feio pra dedéu, mas fui eu que fiz - e funciona!! _DGRM_
+        </footer>
+
+        <!-- script do wellington pra importar o user no url -->
+        <!-- <script>
+                var passaValor= function(valor)
+                {
+                    window.location = "recebe_variavel.html?minhaVariavel="+valor;
+                }
+               var valorQueEuQueroPassar = 123;
+                 passaValor(valorQueEuQueroPassar);
+                </script> -->
+
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
